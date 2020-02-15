@@ -1,10 +1,6 @@
 $(function () {
 	"use strict";
 
-	var queryParam = $.uriGet('project');
-	console.log(queryParam);
-
-
 	/*=========================================================================
 		Initializing stellar.js Plugin
 	=========================================================================*/
