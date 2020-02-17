@@ -1,9 +1,6 @@
 $(function () {
 	"use strict";
 
-	/*=========================================================================
-		Initializing stellar.js Plugin
-	=========================================================================*/
 	$('.section').stellar({
 		horizontalScrolling: false
 	});
@@ -13,10 +10,6 @@ $(function () {
 
 		$('body').addClass('loaded');
 
-
-		/*=========================================================================
-			Portfolio Grid
-		=========================================================================*/
 		var grid = $('#portfolio-grid');
 		grid.shuffle({
 			itemSelector: '.item'
@@ -42,10 +35,6 @@ $(function () {
 	});
 
 
-
-	/*=========================================================================
-		Links Navigation System
-	=========================================================================*/
 	$('.front-person-links > ul > li > a[data-section]').on('click', function (e) {
 		e.preventDefault();
 		var section = $('#' + $(this).data('section'));
@@ -71,20 +60,6 @@ $(function () {
 		}
 	})
 
-
-
-	/*=========================================================================
-		Testimonials Slider
-	=========================================================================*/
-	$('.testimonials-slider').owlCarousel({
-		singleItem: true
-	});
-
-
-
-	/*=========================================================================
-		Skill Bar's Percent Initialization from attribute data-percent
-	=========================================================================*/
 	$('.skill-bar').each(function () {
 		var $this = $(this),
 			percent = parseInt($this.data('percent'), 10);
@@ -98,7 +73,7 @@ $(function () {
 				<button type='button' class='close' data-dismiss='alert' aria-label='Close' > \
 					<i class='ion-ios-close-empty' ></i> \
 				</button> \
-				<strong>Message Sent!</strong> We'll be in touch as soon as possible\
+				<strong>Message Sent!</strong> I will contact you as soon as possible\
 			</div>\
 		</div>`
 
@@ -107,7 +82,7 @@ $(function () {
 				<button type='button' class='close' data-dismiss='alert' aria-label='Close' > \
 					<i class='ion-ios-close-empty' ></i> \
 				</button> \
-				<strong>Error!</strong> Sorry, an error occurred. Try again.\
+				<strong>Error!</strong> Sorry, an error occurred. Please try again.\
 			</div>\
 			</div>`
 
