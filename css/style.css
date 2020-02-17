@@ -462,6 +462,13 @@ body.section-show .transition-mask:before{
 	filter: grayscale(50%);
 }
 
+@media(max-width: 768px) {
+	.front-person-img > img {
+		top: -70px;
+		left: -48px;
+	}
+}
+
 .front-person-titles{
 	position:relative;
 	z-index:10;

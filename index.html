@@ -8,6 +8,7 @@
 
 	<title>Bojan Churlinov | Front End Developer & Designer</title>
 
+	<link rel="shortcut icon" type="image/png" href="./img//favicon.png" />
 	<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css'>
 	<link rel='stylesheet' type='text/css' href='css/ionicons.min.css'>
 
@@ -133,7 +134,10 @@
 
 							<a href='#' class='symp-btn hire-me-link' data-section="contact">Hire Me For Work</a>
 
-							<a href='#' class='symp-btn link-btn'><i class='ion-ios-download'></i>Download Resume</a>
+							<a href='./img//resume.jpg' class='symp-btn link-btn' download>
+								<i class='ion-ios-download'></i>
+								Download Resume
+							</a>
 						</div>
 					</div>
 				</div>
@@ -714,7 +718,7 @@
 				</div>
 			</div>
 		</section>
-	
+
 		<section id='services' class='services-section section'>
 
 			<div class='container'>
@@ -1002,6 +1006,9 @@
 												</a>
 											</li>
 										</ul>
+										<a href="https://rentalsdirect.com" target="_blank">
+											Go to website
+										</a>
 									</div>
 								</div>
 							</div>
@@ -1225,7 +1232,7 @@
 											</li>
 										</ul>
 										<a href="https://bojan-b3887.firebaseapp.com/" target="_blank">
-											Go to website ( personal project, check code on Github)
+											Go to website ( personal project, check code on my Github account)
 										</a>
 									</div>
 								</div>
@@ -1246,7 +1253,7 @@
 											</li>
 										</ul>
 										<a href="https://fierce-beach-01153.herokuapp.com/auth" target="_blank">
-											Go to website ( personal project, check code on Github)
+											Go to website ( personal project, check code on my Github account)
 										</a>
 									</div>
 								</div>
@@ -1317,43 +1324,25 @@
 								<div class='row'>
 									<div class='col-md-6'>
 										<div class='form-group'>
-											<input type='text' class='form-control' placeholder='Name' required>
+											<input type='text' class='form-control' placeholder='Name' name="name"
+												required>
 											<div class='help-block with-errors'></div>
 										</div>
 									</div>
 
 									<div class='col-md-6'>
 										<div class='form-group'>
-											<input type='email' class='form-control' placeholder='Email' required>
+											<input type='email' class='form-control' name="email" placeholder='Email'
+												required>
 
 											<div class='help-block with-errors'></div>
 
 										</div>
 									</div>
-
 								</div>
-
-								<div class='row'>
-									<div class='col-md-6'>
-										<div class='form-group'>
-											<input type='text' class='form-control' placeholder='Phone' required>
-											<div class='help-block with-errors'></div>
-
-										</div>
-									</div>
-
-									<div class='col-md-6'>
-										<div class='form-group'>
-											<input type='text' class='form-control' placeholder='Website' required>
-											<div class='help-block with-errors'></div>
-
-										</div>
-									</div>
-
-								</div>
-
 								<div class='form-group'>
-									<textarea rows='5' class='form-control' placeholder='Message' required></textarea>
+									<textarea rows='5' class='form-control' placeholder='Message' name="message"
+										required></textarea>
 									<div class='help-block with-errors'></div>
 								</div>
 
@@ -1365,7 +1354,6 @@
 					</div>
 				</div>
 			</div>
-
 
 			<div class='footer bg-lightgray section-block'>
 				<div class='container'>
@@ -1416,8 +1404,6 @@
 	<script src='js/jquery.magnific-popup.min.js'></script>
 	<script src='js/validator.min.js'></script>
 	<script src='js/smoothscroll.js'></script>
-	<script src="js/jquery.uriget.min.js"></script>
-	<script src="projectInfo.js"></script>
 	<script src='js/script.js'></script>
 </body>
 
